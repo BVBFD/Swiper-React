@@ -1,0 +1,36 @@
+.swiperApp {
+  height: 100vh;
+}
+.mySwiper {
+  height: 100%;
+}
+
+.mySwiper img {
+  width: 50vw;
+  height: 95vh;
+}
+
+@keyframes animateHueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animateBlur {
+  0% {
+    filter: hue-rotate(0deg) blur(0px);
+  }
+  100% {
+    filter: hue-rotate(360deg) blur(5px);
+  }
+}
+
+.mySwiper .imgBox {
+  text-align: center;
+  background: #222;
+  animation: animateHueRotate 4s linear infinite;
+  animation: animateBlur 20s linear infinite;
+}
